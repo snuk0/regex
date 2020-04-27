@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+<style>
+html {
+  font-size: 125%;
+  line-height: 1.4;
+}
+
+body {
+  display: grid; 
+  place-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, hsl(240, 50%, 78%), hsl(30, 100%, 50%))
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2, p {
+  margin: 0; 
+}
+
+p + * {
+  margin-top: 1em; 
+}
+
+h2 + p {
+  margin-top: 1em;
+}
+
+form {
+  max-width: 20em;
+  border: 0.5em solid hsl(30, 76%, 10%);
+  padding: 2em;
+  background: white;
+}
+
+.input {
+  display: flex; 
+  align-items: center;
+}
+
+label {
+  margin-right: 2ch;
+}
+
+input {
+  width: 100%;
+  font: inherit;
+  padding: 0.25em 0.5em;
+  border: 0.125em solid hsl(30, 76%, 10%); 
+  outline: none;
+}
+
+input:not(:placeholder-shown) {
+  border-color: hsl(0, 76%, 50%);;
+}
+
+input:valid {
+  border-color: hsl(120, 76%, 50%);
+}
+</style>
+<body>
+  <form action="#" autocomplete="off">
+    <div class="input">
+      <label for="input" >Imie </label>
+      <input type="text" name="input" id="input" required placeholder="Wpisz imie" pattern="[A-Z][a-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*">
+    </div>
+    <div class="input">
+      <label for="input" >Nazwisko </label>
+      <input type="text" name="input" id="input" required placeholder="Wpisz nazwisko" pattern="[A-Z][a-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*">
+    </div>
+    <div class="input">
+      <label for="input" >Kod pocztowy </label>
+      <input type="text" name="input" id="input" required placeholder="Wpisz kod pocztoowy" pattern="[0-9]{2}-[0-9]{3}">
+    </div>
+    <div class="input">
+      <label for="input" >Miasto </label>
+      <input type="text" name="input" id="input" required placeholder="Wpisz miasto" pattern="[A-Z][a-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*">
+    </div>
+    <div class="input">
+      <label for="input" >Email </label>
+      <input type="text" name="input" id="input" required placeholder="Wpisz e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    </div>
+    <div class="input">
+      <label for="input" >Nr. tel </label>
+      <input type="text" name="input" id="input" required placeholder="Wpisz numer telefonu" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+    </div>
+  </form>
+
+</body>
+<script>
+
+    
+</script>
+</html>
